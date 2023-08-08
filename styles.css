@@ -39,3 +39,14 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
