@@ -39,11 +39,17 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+
+.btndiv{
+  display: flex;
+  justify-content: center;
+}
 .button {
   background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
   margin: auto;
+  padding: 0;
 }
 
 .button:hover {
