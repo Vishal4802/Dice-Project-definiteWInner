@@ -6,49 +6,14 @@ while(x === y){
 }
 
 if(x>y){
-    document.querySelector("h1").innerHTML = "<small style = 'font-size: 50px'>Player 1 wins</small> Refresh Me"
+    document.querySelector("h1").innerHTML = "🏆Player 1 wins"
 }
 if(y>x){
-    document.querySelector("h1").innerHTML = "Refresh Me <small style = 'font-size: 50px'>Player 2 wins</small>"
+    document.querySelector("h1").innerHTML = "Player 2 wins🏆"
 }
 
-if(x === 1){
-    document.querySelector(".dice img.img1").setAttribute("src", "./public/images/dice1.png")
-}
-else if(x === 2){
-    document.querySelector(".dice img.img1").setAttribute("src", "./public/images/dice2.png")
-}
-else if(x === 3){
-    document.querySelector(".dice img.img1").setAttribute("src", "./public/images/dice3.png")
-}
-else if(x === 4){
-    document.querySelector(".dice img.img1").setAttribute("src", "./public/images/dice4.png")
-}
-else if(x === 5){
-    document.querySelector(".dice img.img1").setAttribute("src", "./public/images/dice5.png")
-}
-else {
-    document.querySelector(".dice img.img1").setAttribute("src", "./public/images/dice6.png")
-}
+var image1Source = "./public/images/dice" + x + ".png"
+var image2Source = "./public/images/dice" + y + ".png"
 
-if(y === 1){
-    document.querySelector(".dice img.img2").setAttribute("src", "./public/images/dice1.png")
-}
-else if(y === 2){
-    document.querySelector(".dice img.img2").setAttribute("src", "./public/images/dice2.png")
-}
-else if(y === 3){
-    document.querySelector(".dice img.img2").setAttribute("src", "./public/images/dice3.png")
-}
-else if(y === 4){
-    document.querySelector(".dice img.img2").setAttribute("src", "./public/images/dice4.png")
-}
-else if(y === 5){
-    document.querySelector(".dice img.img2").setAttribute("src", "./public/images/dice5.png")
-}
-else{
-    document.querySelector(".dice img.img2").setAttribute("src", "./public/images/dice6.png")
-}
-
-document.querySelector("small").style.color = "white"
-document.querySelector("small").style.fontFamily = "sherif"
+document.querySelector(".dice img.img1").setAttribute("src", image1Source)
+document.querySelector(".dice img.img2").setAttribute("src", image2Source)
